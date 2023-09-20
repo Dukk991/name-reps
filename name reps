@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    
+    char nameZ [15];
+    int repetations;
+    int i = 0;
+    
+    printf("\nName: \n");
+    scanf("%s", &nameZ);
+    
+    printf("\nRepetations: \n");
+    scanf("%d", &repetations);
+    
+    while (i<repetations) {
+        printf("\t%s\t", nameZ);
+        i++;
+    }
+    i = 0;
+    
+    do {
+        printf("\t%s\t", nameZ);
+        i++;
+    } while (i<repetations);
+    
+    for (i=0; i<repetations; i++) {
+        printf("\t%s\t", nameZ);
+    }
+    
+    return 0;
+}
